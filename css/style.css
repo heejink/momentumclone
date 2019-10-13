@@ -125,7 +125,7 @@ ul.js-toDoList {
   cursor: text;
 }
 button {
-  background-image: url(../img/close.png);
+  background-image: url(close.png);
   background-size: cover;
   cursor: pointer;
   border: none;
