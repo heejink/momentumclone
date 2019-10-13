@@ -1,0 +1,158 @@
+html {
+  height: 100%;
+}
+body {
+  background-color: #2c3e50;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+head {
+  position: absolute;
+}
+.header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 0 0 7px #636e72;
+  text-align: right;
+  color: white;
+  padding-right: 1%;
+  padding-block-start: 0.5%;
+}
+
+.js-clock {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  text-shadow: 0 0 15px #636e72;
+  cursor: default;
+}
+.js-title {
+  margin-block-start: 4%;
+  margin-block-end: 2%;
+}
+
+.form,
+.greetings,
+.toDoForm {
+  display: none;
+}
+
+.showing {
+  color: white;
+  font-size: 39px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+img.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.greeting-title {
+  color: white;
+  font-size: 50px;
+}
+.greeting-input {
+  width: 430px;
+  height: 50px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+}
+
+.toDoForm-title {
+  color: white;
+  font-size: 35px;
+  font-weight: 300px;
+}
+
+.toDoForm-input {
+  width: 570px;
+  height: 30px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid white;
+}
+
+ul.js-toDoList {
+  padding-inline-start: 1px;
+}
+
+.toDoLists {
+  width: 30%;
+  margin: 0 auto;
+  padding: 0px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(100, 100, 100, 0.38);
+  border-radius: 10px;
+}
+
+.greeting-input:focus,
+.toDoForm-input:focus {
+  outline: none;
+  cursor: text;
+}
+button {
+  background-image: url(/img/close.png);
+  background-size: cover;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 27px;
+  height: 27px;
+}
+li {
+  list-style: none;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  animation: fadeIn 0.5s linear;
+}
+
+.bottom {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  opacity: 0.7;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2%;
+}
+
+.js-quote {
+  font-weight: bold;
+}
