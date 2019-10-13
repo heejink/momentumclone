@@ -89,7 +89,7 @@ img.bgImage {
 .toDoForm-title {
   color: white;
   font-size: 35px;
-  font-weight: 300px;
+  margin-block-end: 15px;
 }
 
 .toDoForm-input {
